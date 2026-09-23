@@ -1,5 +1,6 @@
 import type { SiteConfig } from '../types'
 import { navigateToHash } from '../lib/navigateToHash'
+import { PricingCard } from './PricingCard'
 import { SafeImage } from './SafeImage'
 import { Seal } from './Seal'
 
@@ -28,6 +29,7 @@ export function HeroSection({ config }: HeroSectionProps) {
         </div>
         <ul className="hero__benefits" aria-label="服务说明">{config.hero.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}</ul>
       </div>
+      <PricingCard />
       <div className="hero__art" aria-hidden="true">
         <SafeImage media={config.hero.image} fallbackLabel={config.copy.imageUnavailable} loading="eager" />
       </div>
