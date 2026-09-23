@@ -8,7 +8,7 @@
 
 ## 字体维护
 
-线上使用约 115 KB 的 WOFF2 文字子集，原始 TTF 保留在 `assets/fonts/`，不会复制进 `dist/`。OFL 许可证保留在 `public/fonts/`。
+正文和小字默认使用系统无衬线字体以保证清晰度；约 115 KB 的 WOFF2 文字子集保留供装饰文字按需使用，但不预加载。原始 TTF 保留在 `assets/fonts/`，不会复制进 `dist/`。OFL 许可证保留在 `public/fonts/`。
 
 修改站点文案后，生成并提交更新后的字体：
 

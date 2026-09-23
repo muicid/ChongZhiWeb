@@ -18,7 +18,7 @@ function assert(condition, message) {
   if (!condition) throw new Error(message)
 }
 
-assert(builtHtml.includes('href="./fonts/LXGWWenKaiLite-Regular.woff2"'), 'production HTML must preload the WOFF2 subset with a deploy-path-relative URL')
+assert(!builtHtml.includes('rel="preload" href="./fonts/'), 'unused decorative font must not be preloaded')
 assert(builtCss.includes('url(../fonts/LXGWWenKaiLite-Regular.woff2)'), 'production CSS must resolve the webfont relative to the emitted stylesheet')
 assert(!existsSync(path.join(projectDir, 'dist/fonts/LXGWWenKaiLite-Regular.ttf')), 'the source TTF must stay out of the deployment bundle')
 

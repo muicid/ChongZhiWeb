@@ -17,7 +17,7 @@
   --rail-width: 136px;
   --page-gutter: clamp(28px, 4.2vw, 72px);
   --font-song: "Noto Serif SC", "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
-  --font-kai: "Qixiu WenKai", "Kaiti SC", "STKaiti", "KaiTi", var(--font-song);
+  --font-kai: var(--font-ui);
   --font-display: "Noto Serif SC", "Songti SC", "STSong", var(--font-song);
   --font-latin: "Baskerville", "Times New Roman", serif;
   --font-ui: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;

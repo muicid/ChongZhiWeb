@@ -2,16 +2,14 @@
 .pricing-card {
   position: absolute;
   z-index: 3;
-  top: 46%;
+  top: max(110px, calc(48% - 260px));
   right: clamp(58px, 6vw, 96px);
-  width: clamp(300px, 29vw, 390px);
+  width: clamp(320px, 30vw, 420px);
   padding: 26px 29px 0;
   border: 1px solid color-mix(in srgb, var(--rule) 80%, var(--ink));
   background: linear-gradient(145deg, rgb(255 252 244 / .82), rgb(235 225 208 / .72));
   box-shadow: 8px 10px 0 rgb(40 37 31 / .06), 0 24px 60px rgb(40 37 31 / .14);
-  transform: translateY(-50%);
   isolation: isolate;
-  -webkit-font-smoothing: auto;
 }
 .pricing-card::before,
 .pricing-card::after {
@@ -31,7 +29,7 @@
   gap: 8px;
   color: #254c40;
   font-family: var(--font-ui);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: .13em;
 }
@@ -44,7 +42,7 @@
   line-height: 1.35;
 }
 .pricing-card h2 span { margin: 0 4px; color: var(--accent); }
-.pricing-card__header p { margin: 5px 0 20px; color: #514a40; font-family: var(--font-ui); font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+.pricing-card__header p { margin: 5px 0 20px; color: #514a40; font-family: var(--font-ui); font-size: 16px; font-weight: 600; letter-spacing: .04em; }
 .pricing-card__list { border-top: 1px solid var(--ink); }
 .pricing-card__item {
   display: flex;
@@ -57,12 +55,12 @@
 }
 .pricing-card__item:hover { padding-left: 7px; padding-right: 7px; background: rgb(166 46 38 / .035); }
 .pricing-card__description { min-width: 0; }
-.pricing-card__number { display: block; color: #94251e; font-family: var(--font-ui); font-size: 11px; font-weight: 700; letter-spacing: .05em; }
-.pricing-card__description strong { display: block; margin-top: 5px; font-family: var(--font-ui); font-size: 16px; font-weight: 700; white-space: nowrap; }
-.pricing-card__description em { color: #514a40; font-size: 12px; font-style: normal; font-weight: 600; }
+.pricing-card__number { display: block; color: #94251e; font-family: var(--font-ui); font-size: 14px; font-weight: 700; letter-spacing: .05em; }
+.pricing-card__description strong { display: block; margin-top: 5px; font-family: var(--font-ui); font-size: 19px; font-weight: 700; white-space: nowrap; }
+.pricing-card__description em { color: #514a40; font-size: 15px; font-style: normal; font-weight: 600; }
 .pricing-card__price { flex: none; color: #193d32; font-family: var(--font-latin); font-size: 42px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
 .pricing-card__price span { margin-right: 3px; font-family: var(--font-ui); font-size: 16px; vertical-align: 13px; }
-.pricing-card__contact { display: flex; align-items: center; gap: 8px; margin: 0; padding: 18px 0 20px; color: #403b33; font-family: var(--font-ui); font-size: 12px; font-weight: 600; letter-spacing: .02em; }
+.pricing-card__contact { display: flex; align-items: center; gap: 8px; margin: 0; padding: 18px 0 20px; color: #403b33; font-family: var(--font-ui); font-size: 15px; font-weight: 600; letter-spacing: .02em; }
 .pricing-card__contact span { color: var(--accent); font-size: 19px; line-height: 1; }
 
 html[data-motion='full'] .pricing-card[data-revealed='true'] .pricing-card__item {
@@ -74,14 +72,13 @@ html[data-motion='full'] .pricing-card[data-revealed='true'] .pricing-card__item
   to { opacity: 1; translate: 0 0; }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1400px) {
   .hero .pricing-card {
     position: relative;
     top: auto;
     right: auto;
     width: min(100%, 430px);
     margin-top: 38px;
-    transform: none;
   }
   .hero .hero__journey {
     position: relative;
@@ -96,6 +93,7 @@ html[data-motion='full'] .pricing-card[data-revealed='true'] .pricing-card__item
   .hero .pricing-card { width: 100%; margin-top: 36px; padding: 22px 22px 0; }
   .pricing-card h2 { font-size: 27px; }
   .pricing-card__price { font-size: 38px; }
-  .pricing-card__description strong { font-size: 14px; }
-  .pricing-card__description em { font-size: 11px; }
+  .pricing-card__description strong { font-size: 16px; }
+  .pricing-card__description em { font-size: 12px; }
+  .pricing-card__contact { font-size: 12px; }
 }

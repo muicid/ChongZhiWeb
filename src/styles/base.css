@@ -11,13 +11,12 @@ body {
   min-width: 320px;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-song);
+  font-family: var(--font-ui);
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.78;
   font-kerning: normal;
   font-feature-settings: "kern", "liga", "clig";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 { text-wrap: balance; }
