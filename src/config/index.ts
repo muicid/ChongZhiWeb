@@ -36,7 +36,7 @@ export const siteConfig = {
     scrollLabel: '查看充值步骤',
     benefits: ['卡密长期有效', '31 天质保', '附常见问题解答'],
     image: {
-      src: '/media/ink-panorama.webp',
+      src: './media/ink-panorama.webp',
       alt: '水墨山水长卷，山峦间隐约刻着细密的线路纹理',
       position: '60% 60%',
     },
@@ -51,7 +51,7 @@ export const siteConfig = {
     prepareLabel: '查看所需材料',
     folio: 'RECHARGE FOLIO · 004',
     image: {
-      src: '/media/ink-panorama.webp',
+      src: './media/ink-panorama.webp',
       alt: '群峰与河谷展开成可阅读流程的水墨山水',
       position: '64% 58%',
     },
@@ -70,7 +70,7 @@ export const siteConfig = {
     material: 'CDK 卡密 · Session 会话',
     summary: '准备两项材料，确认账号状态，就可以开始。具体获取方式都在下方。',
     image: {
-      src: '/media/knot-icon-blue.png',
+      src: './media/knot-icon-blue.png',
       alt: 'ChatGPT 结形标志的淡蓝色图标',
       position: '50% 50%',
     },

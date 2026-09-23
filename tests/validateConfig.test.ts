@@ -34,7 +34,7 @@ describe('validateConfig', () => {
     const config = cloneConfig()
     config.hero.image = { src: '../private/source.png', alt: '' }
     expect(validateConfig(config)).toEqual(expect.arrayContaining([
-      'hero.image.src must use /media/ or an absolute http(s) URL',
+      'hero.image.src must use ./media/ or an absolute http(s) URL',
       'hero.image.alt must not be empty',
     ]))
   })

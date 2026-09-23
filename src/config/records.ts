@@ -5,17 +5,17 @@ export const records = {
   title: '须知与问答',
   intro: '动手之前，先读这四则：账号状态、质保售后、常见问题。它们决定了这趟充值是否顺畅，也写明了三十一天质保的边界。',
   primaryImage: {
-    src: '/media/ink-panorama.webp',
+    src: './media/ink-panorama.webp',
     alt: '适合作为须知背景的山谷水墨画',
     position: '74% 54%',
   },
   detailImage: {
-    src: '/media/step-arrival.svg',
+    src: './media/step-arrival.svg',
     alt: 'Plus 权益与邮箱账单核查示意图',
     position: '50% 50%',
   },
   specimenImage: {
-    src: '/media/ink-token.webp',
+    src: './media/ink-token.webp',
     alt: '水墨风格的卡密凭证插画',
     position: '50% 50%',
   },

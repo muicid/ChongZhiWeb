@@ -5,8 +5,8 @@ const ID = /^[a-z][a-z0-9-]*$/
 const REQUIRED_SECTIONS: SectionId[] = ['cover', 'chapters', 'landscape', 'specimen', 'records', 'colophon']
 
 function isMedia(asset: MediaAsset, path: string, problems: string[]) {
-  if (!asset.src.startsWith('/media/') && !/^https?:\/\//.test(asset.src)) {
-    problems.push(`${path}.src must use /media/ or an absolute http(s) URL`)
+  if (!asset.src.startsWith('./media/') && !/^https?:\/\//.test(asset.src)) {
+    problems.push(`${path}.src must use ./media/ or an absolute http(s) URL`)
   }
   if (!asset.alt.trim()) problems.push(`${path}.alt must not be empty`)
 }

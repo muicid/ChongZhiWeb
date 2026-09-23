@@ -15,7 +15,7 @@ export function HeroSection({ config }: HeroSectionProps) {
       <div className="hero__content">
         <div className="hero__title-card" data-reveal="mask">
           <div className="hero__brand-lockup">
-            <img src="/media/chatgpt-mark.svg" alt="" width="56" height="56" />
+            <img src="./media/chatgpt-mark.svg" alt="" width="56" height="56" />
             <span>PLUS RECHARGE GUIDE<small>ChatGPT 订阅充值教程</small></span>
           </div>
           <h1 id="hero-title"><span className="hero__product">{config.hero.product}</span><span className="hero__title-line">{config.hero.title}<Seal character={config.brand.sealCharacter} label={`${config.brand.name}印`} small /></span></h1>

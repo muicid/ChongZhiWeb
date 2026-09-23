@@ -44,7 +44,7 @@ export function ArchiveChrome({ config, activeSection, progress }: ArchiveChrome
     <>
       <header className="mobile-header">
         <a className="mobile-header__brand" href="#cover" onClick={navigateToHash} aria-label={config.copy.returnToTop}>
-          <img src="/media/chatgpt-mark.svg" alt="" width="28" height="28" />
+          <img src="./media/chatgpt-mark.svg" alt="" width="28" height="28" />
           <span>{config.brand.subtitle}</span>
         </a>
         <Seal character={config.brand.sealCharacter} label={`${config.brand.name}印`} small />

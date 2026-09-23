@@ -10,7 +10,7 @@ export const chapters = [
     title: '第一步：粘贴并验证卡密',
     summary: '在「充值提交」中粘贴店铺发送的卡密并验证。',
     coordinates: '第一步 · 充值提交',
-    image: { src: '/media/step-cdk.svg', alt: '操作示意：在充值提交页粘贴卡密，点击验证 CDK', position: '50% 50%', link: { ...rechargeLink, label: '打开验证卡密网站（新标签页）', region: 'button' } },
+    image: { src: './media/step-cdk.svg', alt: '操作示意：在充值提交页粘贴卡密，点击验证 CDK', position: '50% 50%', link: { ...rechargeLink, label: '打开验证卡密网站（新标签页）', region: 'button' } },
     detail: {
       kicker: '第一步 · 卡密',
       title: '提交卡密',
@@ -33,7 +33,7 @@ export const chapters = [
     title: '第二步：获取并提交 Session',
     summary: '登录 ChatGPT 网页版，打开 Session 页面，全选复制后粘贴回兑换网站。',
     coordinates: 'chatgpt.com/api/auth/session',
-    image: { src: '/media/step-session.svg', alt: '操作示意：登录 ChatGPT 后打开 Session 页面，全选复制，再回充值网站粘贴', position: '50% 50%', link: { href: 'https://chatgpt.com/api/auth/session', label: '打开 ChatGPT Session 页面（新标签页）' } },
+    image: { src: './media/step-session.svg', alt: '操作示意：登录 ChatGPT 后打开 Session 页面，全选复制，再回充值网站粘贴', position: '50% 50%', link: { href: 'https://chatgpt.com/api/auth/session', label: '打开 ChatGPT Session 页面（新标签页）' } },
     detail: {
       kicker: '第二步 · 会话',
       title: '提交 Session',
@@ -56,7 +56,7 @@ export const chapters = [
     title: '第三步：提交任务，等待充值完成',
     summary: '确认信息无误后提交任务，保持页面打开，直到出现「充值已完成」。',
     coordinates: '兑换网站 · 任务处理中',
-    image: { src: '/media/step-processing.svg', alt: '状态示意：从任务处理中到充值已完成，期间保持页面打开', position: '50% 50%' },
+    image: { src: './media/step-processing.svg', alt: '状态示意：从任务处理中到充值已完成，期间保持页面打开', position: '50% 50%' },
     detail: {
       kicker: '第三步 · 静候',
       title: '确认充值结果',
@@ -79,7 +79,7 @@ export const chapters = [
     title: '第四步：确认 Plus 权益与邮箱账单',
     summary: '邮箱会收到订阅账单，网页端显示 Plus 权益，至此充值全部完成。',
     coordinates: '邮箱账单 · 网页权益',
-    image: { src: '/media/step-arrival.svg', alt: '核查示意：刷新 ChatGPT 网页端确认 Plus 权益，并核对邮箱订阅账单', position: '50% 50%', link: { href: 'https://chatgpt.com/', label: '打开 ChatGPT 核查订阅权益（新标签页）' } },
+    image: { src: './media/step-arrival.svg', alt: '核查示意：刷新 ChatGPT 网页端确认 Plus 权益，并核对邮箱订阅账单', position: '50% 50%', link: { href: 'https://chatgpt.com/', label: '打开 ChatGPT 核查订阅权益（新标签页）' } },
     detail: {
       kicker: '第四步 · 到账',
       title: '到账核查',
