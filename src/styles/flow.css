@@ -1,0 +1,58 @@
+/* A readable process overview: content stays in flow at every viewport. */
+.recharge-flow {
+  min-height: auto;
+  padding: clamp(56px, 6vw, 100px) var(--page-gutter) clamp(64px, 7vw, 112px);
+  background: #f4efe5;
+  isolation: isolate;
+}
+.recharge-flow::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url('/media/ink-panorama.webp') right center / cover no-repeat;
+  opacity: .24;
+  mask-image: linear-gradient(110deg, transparent 0%, #000 65%);
+  pointer-events: none;
+}
+.recharge-flow__header { max-width: 760px; }
+.recharge-flow__header .eyebrow { color: #496358; font-size: 12px; letter-spacing: .16em; }
+.recharge-flow__header h2 { margin: 14px 0 16px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.25; letter-spacing: .04em; font-weight: 400; }
+.recharge-flow__header p { margin: 0; color: var(--muted-ink); font-family: var(--font-ui); font-size: 16px; line-height: 1.85; }
+.recharge-flow__steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; list-style: none; padding: 0; margin: 44px 0 32px; }
+.flow-step { position: relative; min-width: 0; display: flex; flex-direction: column; padding: clamp(20px, 2vw, 32px); border: 1px solid #d5cabb; border-radius: 12px; background: #fcf9f2; font-family: var(--font-ui); box-shadow: 0 6px 20px rgb(56 43 26 / .025); }
+.flow-step__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 28px; color: #254c40; }
+.flow-step__number { font-size: 14px; font-weight: 600; letter-spacing: .1em; font-variant-numeric: tabular-nums; }
+.flow-step__top svg { width: 32px; height: 32px; }
+.flow-step h3 { margin: 0 0 14px; font-family: var(--font-ui); font-size: clamp(18px, 1.5vw, 23px); font-weight: 600; line-height: 1.4; letter-spacing: -.02em; text-wrap: initial; }
+.flow-step p { margin: 0 0 26px; font-size: 15px; line-height: 1.9; color: #625b50; overflow-wrap: anywhere; }
+.flow-step button { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; width: 100%; min-height: 44px; padding: 14px 0 0; border: 0; border-top: 1px solid #e3dace; background: none; color: #254c40; text-align: left; font-size: 14px; font-weight: 600; cursor: pointer; }
+.flow-step button:hover { color: var(--accent); }
+.flow-step__connector { position: absolute; top: 50%; right: -26px; width: 24px; translate: 0 -50%; text-align: center; color: #7e897f; font-size: 20px; }
+.flow-step:last-child .flow-step__connector { display: none; }
+.recharge-flow__footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid #d5cabb; padding-top: 28px; font-family: var(--font-ui); }
+.recharge-flow__footer strong { color: #254c40; font-size: 16px; font-weight: 600; }
+.recharge-flow__footer p { max-width: 48ch; margin: 6px 0 0; font-size: 14px; line-height: 1.85; color: var(--muted-ink); }
+.recharge-flow__actions { display: flex; align-items: center; flex-shrink: 0; gap: 20px; }
+.recharge-flow__actions a { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 48px; font-size: 14px; }
+.recharge-flow__prepare { color: #254c40; }
+.recharge-flow__prepare:hover { text-decoration: underline; text-underline-offset: 5px; }
+.recharge-flow__start { padding: 12px 22px; border-radius: 6px; background: #254c40; color: #fffaf2; }
+.recharge-flow__start:hover { background: #18382e; }
+@media (max-width: 1200px) and (min-width: 601px) {
+  .recharge-flow__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flow-step:nth-child(2) .flow-step__connector { display: none; }
+}
+@media (max-width: 900px) {
+  .recharge-flow__footer { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 600px) {
+  .recharge-flow { padding-top: 40px; padding-bottom: 48px; }
+  .recharge-flow__header p { font-size: 15px; }
+  .recharge-flow__steps { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-top: 28px; }
+  .flow-step { padding: 22px; }
+  .flow-step__top { margin-bottom: 16px; }
+  .flow-step p { margin-bottom: 18px; }
+  .flow-step__connector { top: auto; bottom: -28px; right: calc(50% - 12px); translate: none; rotate: 90deg; height: 28px; line-height: 28px; }
+  .recharge-flow__actions { flex-wrap: wrap; width: 100%; gap: 12px 20px; }
+}

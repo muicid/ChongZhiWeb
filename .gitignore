@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-edgeone.zip
+*.log
+.env
+.env.*

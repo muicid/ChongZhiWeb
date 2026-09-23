@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="620" viewBox="0 0 560 620">
+<rect width="560" height="620" fill="#e4d8c5"/><g font-family="Arial, Microsoft YaHei, sans-serif">
+<text x="42" y="65" fill="#a62e26" font-size="14" letter-spacing="3">STEP 02 / CHATGPT PLUS</text>
+<text x="42" y="116" fill="#28251f" font-size="32" font-weight="bold">提交 Session</text>
+<rect x="32" y="164" width="496" height="322" rx="12" fill="#f7f2e9" stroke="#b8aa94"/>
+<path d="M32 214H528" stroke="#d6cbbb"/><text x="54" y="195" fill="#254c40" font-size="17">chatgpt.com/api/auth/session</text>
+<text x="60" y="256" fill="#28251f" font-size="18">① 登录后打开上方地址</text>
+<rect x="60" y="280" width="440" height="80" rx="5" fill="#e1e9df"/><text x="80" y="314" fill="#254c40" font-size="16" font-family="monospace">{ Session ... }</text><text x="80" y="341" fill="#254c40" font-size="14">Ctrl+A 全选 → Ctrl+C 复制</text>
+<path d="M280 370v24m-6-6 6 6 6-6" stroke="#a62e26" stroke-width="2" fill="none"/>
+<rect x="60" y="408" width="440" height="50" rx="5" fill="#a62e26"/><text x="280" y="440" text-anchor="middle" fill="#fffaf2" font-size="18">② 回到充值网站，粘贴并提交</text>
+<text x="42" y="545" fill="#28251f" font-size="17">完整复制内容，勿遗漏字符。</text>
+<text x="42" y="585" fill="#6b6154" font-size="13">操作示意 · 非实际界面截图 · 不含真实凭证</text></g></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="620" viewBox="0 0 560 620">
+<rect width="560" height="620" fill="#e4d8c5"/><g font-family="Arial, Microsoft YaHei, sans-serif">
+<text x="42" y="65" fill="#a62e26" font-size="14" letter-spacing="3">STEP 03 / CHATGPT PLUS</text>
+<text x="42" y="116" fill="#28251f" font-size="32" font-weight="bold">等待充值完成</text>
+<rect x="32" y="164" width="496" height="322" rx="12" fill="#f7f2e9" stroke="#b8aa94"/>
+<path d="M32 214H528" stroke="#d6cbbb"/><text x="54" y="195" fill="#6b6154" font-size="14">充值任务 · 处理状态</text>
+<circle cx="86" cy="271" r="20" fill="none" stroke="#b8aa94" stroke-width="2"/><path d="M86 259v13l8 6" fill="none" stroke="#6b6154" stroke-width="2"/>
+<text x="124" y="277" fill="#6b6154" font-size="21">任务处理中…</text><path d="M86 306v50" stroke="#b8aa94" stroke-dasharray="4 5"/>
+<rect x="60" y="366" width="440" height="85" rx="5" fill="#e1e9df" stroke="#254c40"/><circle cx="94" cy="408" r="20" fill="#254c40"/><path d="m85 408 6 6 12-13" fill="none" stroke="#fffaf2" stroke-width="3"/>
+<text x="132" y="416" fill="#254c40" font-size="25" font-weight="bold">充值已完成</text>
+<text x="42" y="545" fill="#28251f" font-size="17">保持页面打开，等待完成提示。</text>
+<text x="42" y="585" fill="#6b6154" font-size="13">状态示意 · 非实际界面截图</text></g></svg>

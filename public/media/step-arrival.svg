@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="620" viewBox="0 0 560 620">
+<rect width="560" height="620" fill="#e4d8c5"/><g font-family="Arial, Microsoft YaHei, sans-serif">
+<text x="42" y="65" fill="#a62e26" font-size="14" letter-spacing="3">STEP 04 / CHATGPT PLUS</text>
+<text x="42" y="116" fill="#28251f" font-size="32" font-weight="bold">核查 Plus 到账</text>
+<rect x="32" y="164" width="496" height="322" rx="12" fill="#f7f2e9" stroke="#b8aa94"/>
+<path d="M32 214H528" stroke="#d6cbbb"/><text x="54" y="195" fill="#6b6154" font-size="14">chatgpt.com · 订阅权益核查</text>
+<text x="60" y="269" fill="#28251f" font-size="18">① 返回网页端，刷新订阅状态</text>
+<rect x="60" y="293" width="440" height="78" rx="5" fill="#e1e9df" stroke="#254c40"/><text x="84" y="341" fill="#254c40" font-size="31" font-weight="bold">ChatGPT</text><rect x="339" y="311" width="134" height="42" rx="21" fill="#254c40"/><text x="406" y="339" text-anchor="middle" fill="#fffaf2" font-size="21">Plus ✓</text>
+<path d="M64 410h32v24H64zm0 0 16 12 16-12" fill="none" stroke="#a62e26" stroke-width="2"/><text x="112" y="430" fill="#28251f" font-size="18">② 核对绑定邮箱中的订阅账单</text>
+<text x="42" y="545" fill="#28251f" font-size="17">未显示权益？重新登录后再核查。</text>
+<text x="42" y="585" fill="#6b6154" font-size="13">核查示意 · 非实际界面截图</text></g></svg>
