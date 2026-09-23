@@ -22,7 +22,7 @@ export function PricingCard() {
           <div className="pricing-card__price"><span>¥</span>665</div>
         </div>
       </div>
-      <p className="pricing-card__contact"><span aria-hidden="true">↙</span>购买请添加左下角客服微信</p>
+      <p className="pricing-card__contact"><span aria-hidden="true">↘</span>购买请添加右下角客服微信</p>
     </aside>
   )
 }
