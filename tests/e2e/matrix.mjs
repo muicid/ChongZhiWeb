@@ -339,7 +339,14 @@ try {
       assert(mobileActiveIndicator !== 'none', 'mobile navigation must retain its active underline')
       const mobileOverflow = await mobile.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
       assert(mobileOverflow <= 1, `mobile horizontal overflow: ${mobileOverflow}px`)
-      assert(await mobile.locator('.wechat-contact').evaluate((node) => getComputedStyle(node).position === 'relative'), 'mobile contact card must stay in document flow without covering the guide')
+      assert(await mobile.locator('.wechat-contact').evaluate((node) => {
+        const contact = node.getBoundingClientRect()
+        const dock = document.querySelector('.mobile-dock').getBoundingClientRect()
+        return getComputedStyle(node).position === 'fixed' && contact.top >= 0 && contact.bottom <= dock.top && contact.right <= innerWidth
+      }), 'mobile contact card must remain visible above the bottom navigation')
+      await mobile.locator('.wechat-contact__toggle').click()
+      assert(await mobile.locator('.wechat-contact__label strong').isVisible(), 'mobile contact must reveal the WeChat ID')
+      await mobile.locator('.wechat-contact__toggle').click()
       const revealOpacity = await mobile.locator('.hero__title-card').evaluate((node) => getComputedStyle(node).opacity)
       assert(revealOpacity === '1', 'reduced motion must reveal primary content immediately')
       const mobileStatementHalo = await mobile.locator('.hero__statement').evaluate((node) => getComputedStyle(node).textShadow)

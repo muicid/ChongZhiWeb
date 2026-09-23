@@ -6,7 +6,13 @@
   }
 
   .archive-rail { display: none; }
-  .wechat-contact { position: relative; inset: auto; width: fit-content; margin: 24px var(--page-gutter) calc(var(--mobile-dock) + env(safe-area-inset-bottom, 0px) + 24px) auto; font-size: 13px; }
+  .wechat-contact {
+    position: fixed;
+    inset: auto var(--page-gutter) calc(var(--mobile-dock) + env(safe-area-inset-bottom, 0px) + 12px) auto;
+    width: fit-content;
+    margin: 0;
+    font-size: 13px;
+  }
   .section { margin-left: 0; scroll-margin-top: var(--mobile-header); }
 
   .mobile-header {
@@ -233,4 +239,12 @@
   inset: auto;
   width: fit-content;
   margin: 24px var(--page-gutter) 32px auto;
+}
+
+@media (max-width: 900px) {
+  .is-detail-open .wechat-contact {
+    position: fixed;
+    inset: auto var(--page-gutter) calc(var(--mobile-dock) + env(safe-area-inset-bottom, 0px) + 12px) auto;
+    margin: 0;
+  }
 }
